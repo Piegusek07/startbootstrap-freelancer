@@ -17,7 +17,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 	
 // Create the email and send the message
 $to = 'hello@codeforpoznan.pl'; // Add your email address inbetween the '' replacing hello@codeforpoznan.pl - This is where the form will send a message to.
-$email_subject = "Formularz kontaktowy strony:  $name";
+$email_subject = "Formularz kontaktowy Code For Poznan:  $name";
 $email_body = "Otrzymałeś nową wiadomość z formularza kontaktowego codeforpoznan.pl.\n\n"."Oto szczegóły:\n\nImię: $name\n\nEmail: $email_address\n\nTelefon: $phone\n\nMessage:\n$message";
 $headers = "From: noreply@codeforpoznan.pl\n"; // To jest adres e-mail, z którego została wygenerowana wiadomość. W celu kontaktu zalecamy użyć hello@codeforpoznan.pl";
 $headers .= "Odpowiedz na : $email_address";
